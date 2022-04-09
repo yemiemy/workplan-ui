@@ -53,6 +53,7 @@ function formatShiftElement(shift, i) {
 }
 
 function handleClick(id){
+    console.log("HERE")
     localStorage.setItem("id", id)
 }
 
