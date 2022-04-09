@@ -5,7 +5,7 @@ const selectWorkers = document.getElementById("id_select_workers")
 const getAvailableWorkers = () => {
     const xhr = new XMLHttpRequest()
     const method ="GET"
-    const url = "http://127.0.0.1:8000/api/worker/list/"
+    const url = "https://workplanapi.herokuapp.com/api/worker/list/"
     const responseType = "json"
 
     xhr.responseType = responseType
@@ -40,7 +40,7 @@ const getAvailableWorkers = () => {
 
 
 const handleDetail = (id) => {
-    const url = `http://127.0.0.1:8000/api/shift/${id}/`
+    const url = `https://workplanapi.herokuapp.com/api/shift/${id}/`
     const method = "GET"
     const xhr = new XMLHttpRequest()
     xhr.responseType =  "json"

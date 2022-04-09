@@ -22,7 +22,7 @@ function handleAssignMent(event) {
     const myForm = event.target
     const myFormData = new FormData(myForm)
     const method = "PUT"
-    const url = `http://127.0.0.1:8000/api/add-worker-to-shift/${id}/`
+    const url = `https://workplanapi.herokuapp.com/api/add-worker-to-shift/${id}/`
     
     const xhr = new XMLHttpRequest()
     xhr.open(method, url)
